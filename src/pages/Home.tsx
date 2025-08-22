@@ -18,12 +18,8 @@ const Home = () => {
               </span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
- HEAD
-              iGenieLabs empowers organizations with cutting-edge AI solutions, 
-
-              iGenie Labs empowers organizations with cutting-edge AI solutions, 
- 
-              strategic advisory services, and rapid product development to drive 
+              iGenieLabs empowers organizations with cutting-edge AI solutions,
+              strategic advisory services, and rapid product development to drive
               digital transformation and accelerate growth.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -43,7 +39,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Features Section */}
+      {/* Why Choose iGenie Labs */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
@@ -51,11 +47,11 @@ const Home = () => {
               Why Choose iGenie Labs?
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              We combine deep technical expertise with strategic vision to deliver 
+              We combine deep technical expertise with strategic vision to deliver
               transformative AI solutions that drive real business value.
             </p>
           </div>
-          
+
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="border-border bg-gradient-card shadow-card hover:shadow-glow transition-all duration-300">
               <CardContent className="p-8 text-center">
@@ -66,7 +62,7 @@ const Home = () => {
                 </p>
               </CardContent>
             </Card>
-            
+
             <Card className="border-border bg-gradient-card shadow-card hover:shadow-glow transition-all duration-300">
               <CardContent className="p-8 text-center">
                 <Zap className="h-12 w-12 text-primary mx-auto mb-4" />
@@ -76,7 +72,7 @@ const Home = () => {
                 </p>
               </CardContent>
             </Card>
-            
+
             <Card className="border-border bg-gradient-card shadow-card hover:shadow-glow transition-all duration-300">
               <CardContent className="p-8 text-center">
                 <Target className="h-12 w-12 text-primary mx-auto mb-4" />
@@ -89,6 +85,155 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* Our Expertise Section */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Expertise</h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              We help businesses harness the power of AI across strategy, engineering, and operations.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-4 gap-8">
+            <Card className="p-8 text-center shadow-card hover:shadow-glow transition-all">
+              <h3 className="text-xl font-semibold mb-4">Strategy & Advisory</h3>
+              <p className="text-muted-foreground mb-4">
+                Analytics roadmap, Data & Platform strategy tailored for business outcomes.
+              </p>
+              <Link to="/services">
+                <Button variant="link" className="text-primary">
+                  Know more →
+                </Button>
+              </Link>
+            </Card>
+
+            <Card className="p-8 text-center shadow-card hover:shadow-glow transition-all">
+              <h3 className="text-xl font-semibold mb-4">Engineer Your Data</h3>
+              <p className="text-muted-foreground mb-4">
+                Data modernization, foundation, and operations to unlock value.
+              </p>
+              <Link to="/services">
+                <Button variant="link" className="text-primary">
+                  Know more →
+                </Button>
+              </Link>
+            </Card>
+
+            <Card className="p-8 text-center shadow-card hover:shadow-glow transition-all">
+              <h3 className="text-xl font-semibold mb-4">Differentiate with AI/ML</h3>
+              <p className="text-muted-foreground mb-4">
+                Data science, AI engineering, and ML platforms for innovation.
+              </p>
+              <Link to="/services">
+                <Button variant="link" className="text-primary">
+                  Know more →
+                </Button>
+              </Link>
+            </Card>
+
+            <Card className="p-8 text-center shadow-card hover:shadow-glow transition-all">
+              <h3 className="text-xl font-semibold mb-4">Operationalize Insights</h3>
+              <p className="text-muted-foreground mb-4">
+                Consulting, application engineering, BI, and MLOps for scale.
+              </p>
+              <Link to="/services">
+                <Button variant="link" className="text-primary">
+                  Know more →
+                </Button>
+              </Link>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Latest Products Section */}
+<section className="py-20 px-4 sm:px-6 lg:px-8">
+  <div className="max-w-7xl mx-auto">
+    <div className="text-center mb-16">
+      <h2 className="text-3xl md:text-4xl font-bold mb-4">Latest Products</h2>
+      <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+        Explore our innovative AI-driven products designed to transform industries.
+      </p>
+    </div>
+
+    <div className="grid md:grid-cols-3 gap-8">
+      {/* AI Travel App */}
+      <Card className="shadow-card hover:shadow-glow transition-all">
+        <CardContent className="p-6">
+          <img
+            src="/images/ai-travel-app.png"
+            alt="AI Travel App"
+            className="rounded-xl mb-6 w-full h-48 object-cover"
+          />
+          <h3 className="text-xl font-semibold mb-3">AI Travel App</h3>
+          <p className="text-muted-foreground mb-4">
+            Intelligent travel planning with personalized recommendations, real-time updates, and seamless booking.
+          </p>
+          <ul className="text-muted-foreground list-disc list-inside mb-6">
+            <li>Smart Itinerary Planning</li>
+            <li>Real-time Recommendations</li>
+            <li>Price Optimization</li>
+            <li>Local Insights</li>
+          </ul>
+          <Link to="/products">
+            <Button className="w-full">View Product</Button>
+          </Link>
+        </CardContent>
+      </Card>
+
+      {/* AI Audio Library */}
+      <Card className="shadow-card hover:shadow-glow transition-all">
+        <CardContent className="p-6">
+          <img
+            src="/images/ai-audio-library.png"
+            alt="AI Audio Library"
+            className="rounded-xl mb-6 w-full h-48 object-cover"
+          />
+          <h3 className="text-xl font-semibold mb-3">AI Audio Library</h3>
+          <p className="text-muted-foreground mb-4">
+            Smart audio content management with real-time search, classification, and intelligent tagging.
+          </p>
+          <ul className="text-muted-foreground list-disc list-inside mb-6">
+            <li>Content Recommendation</li>
+            <li>Real-time Classification</li>
+            <li>Intelligent Tagging</li>
+            <li>Seamless Access</li>
+          </ul>
+          <Link to="/products">
+            <Button className="w-full">View Product</Button>
+          </Link>
+        </CardContent>
+      </Card>
+
+      {/* AI Workflow App */}
+      <Card className="shadow-card hover:shadow-glow transition-all">
+        <CardContent className="p-6">
+          <img
+            src="/images/ai-workflow-app.png"
+            alt="AI Workflow App"
+            className="rounded-xl mb-6 w-full h-48 object-cover"
+          />
+          <h3 className="text-xl font-semibold mb-3">AI Workflow App</h3>
+          <p className="text-muted-foreground mb-4">
+            Streamline business processes with intelligent automation, predictive analysis, and adaptive workflows.
+          </p>
+          <ul className="text-muted-foreground list-disc list-inside mb-6">
+            <li>Process Automation</li>
+            <li>Predictive Analysis</li>
+            <li>Smart Scheduling</li>
+            <li>Performance Insights</li>
+          </ul>
+          <Link to="/products">
+            <Button className="w-full">View Product</Button>
+          </Link>
+        </CardContent>
+      </Card>
+    </div>
+  </div>
+</section>
+
 
       {/* CTA Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-hero">
