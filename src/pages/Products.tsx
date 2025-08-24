@@ -6,7 +6,7 @@ const Products = () => {
   const products = [
     {
       icon: MapPin,
-      title: "AI Travel App",
+      title: "Travel Genie",
       description: "Intelligent travel planning powered by AI to create personalized itineraries, find the best deals, and optimize your journey from start to finish.",
       features: [
         "Smart itinerary generation",
@@ -17,7 +17,7 @@ const Products = () => {
     },
     {
       icon: Music,
-      title: "AI Audio Library App",
+      title: "Audio Genie",
       description: "Revolutionary audio management system that uses AI to organize, categorize, and enhance your audio content with intelligent search and discovery.",
       features: [
         "Automated audio categorization",
@@ -28,7 +28,7 @@ const Products = () => {
     },
     {
       icon: Workflow,
-      title: "AI Workflow App",
+      title: "Genie Workflow",
       description: "Streamline your business processes with AI-driven workflow automation that learns from your patterns and optimizes operations in real-time.",
       features: [
         "Process automation",

@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Database, Globe, Wrench, Rocket, Brain, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   const services = [
@@ -111,14 +112,18 @@ const Services = () => {
                       ))}
                     </ul>
                   </div>
+                  {/* 👇 Updated button wrapped in Link */}
+                  <Link to="/contact">
                   <Button 
-                    className="w-full group-hover:shadow-glow transition-all duration-300"
-                    variant="outline"
-                    size="sm"
+                  className="w-full group-hover:shadow-glow transition-all duration-300"
+                  variant="outline"
+                  size="sm"
                   >
-                    Get Consultation
-                    <ArrowRight className="ml-2 h-3 w-3 transition-transform group-hover:translate-x-1" />
+                  Get Consultation
+                  <ArrowRight className="ml-2 h-3 w-3 transition-transform group-hover:translate-x-1" />
                   </Button>
+                  </Link>
+
                 </CardContent>
               </Card>
             ))}

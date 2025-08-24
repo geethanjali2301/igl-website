@@ -38,10 +38,10 @@ const Footer = () => {
                 <Mail className="h-5 w-5 text-primary" /> info@igenielabs.com
               </li>
               <li className="flex items-center gap-2">
-                <Phone className="h-5 w-5 text-primary" /> +91 98765 43210
+                <Phone className="h-5 w-5 text-primary" /> +1 704-703-8060
               </li>
               <li className="flex items-center gap-2">
-                <MapPin className="h-5 w-5 text-primary" /> Hyderabad, India
+                <MapPin className="h-5 w-5 text-primary" /> 3540 Toringdon Way Suite 200 #1043, Charlotte NC 28277
               </li>
             </ul>
           </div>

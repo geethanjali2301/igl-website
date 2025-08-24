@@ -26,9 +26,9 @@ const Contact = () => {
               <CardContent className="p-8 text-center flex flex-col justify-center">
                 <h3 className="text-xl font-semibold mb-3">📍 Address</h3>
                 <p className="text-muted-foreground">
-                  iGenie Labs <br />
-                  Hyderabad, Telangana <br />
-                  India
+                  3540 Toringdon Way Suite 200 <br />
+                  #1043, Charlotte NC 28277 <br />
+                  USA
                 </p>
               </CardContent>
             </Card>
@@ -38,9 +38,8 @@ const Contact = () => {
               <CardContent className="p-8 text-center flex flex-col justify-center">
                 <h3 className="text-xl font-semibold mb-3">📞 Mobile</h3>
                 <p className="text-muted-foreground">
-                  +91-9876543210 <br />
-                  +91-9123456780
-                </p>
+                  +1 704-703-8060
+                  </p>
               </CardContent>
             </Card>
 
@@ -49,8 +48,7 @@ const Contact = () => {
               <CardContent className="p-8 text-center flex flex-col justify-center">
                 <h3 className="text-xl font-semibold mb-3">✉️ Email</h3>
                 <p className="text-muted-foreground">
-                  contact@igenielabs.com <br />
-                  support@igenielabs.com
+                  info@igenielabs.com
                 </p>
               </CardContent>
             </Card>
@@ -59,7 +57,7 @@ const Contact = () => {
           {/* Google Map */}
           <div className="rounded-xl overflow-hidden shadow-card border border-border h-full">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.56413992804!2d78.382267!3d17.447753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93c7ef1e5d11%3A0xdda52bcd3f3d2d0!2sHitech%20City%2C%20Hyderabad!5e0!3m2!1sen!2sin!4v1674748162359!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d208816.08385325148!2d-80.8971405!3d35.1378791!3m2!1i1024!2i768!4f13.1!2m1!1s3540%20Toringdon%20Way%20Suite%20200%20%231043%20Charlotte%20NC%2028277%20iframe!5e0!3m2!1sen!2sin!4v1756052553146!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
               width="100%"
               height="100%"
               style={{ border: 0, minHeight: "500px" }}

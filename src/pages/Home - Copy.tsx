@@ -58,7 +58,7 @@ const Home = () => {
                 <Sparkles className="h-12 w-12 text-primary mx-auto mb-4" />
                 <h3 className="text-xl font-semibold mb-3">AI-First Solutions</h3>
                 <p className="text-muted-foreground">
-                  Build smarter products and experiences with AI.
+                  Revolutionary AI applications that streamline workflows and enhance user experiences.
                 </p>
               </CardContent>
             </Card>
@@ -68,7 +68,7 @@ const Home = () => {
                 <Zap className="h-12 w-12 text-primary mx-auto mb-4" />
                 <h3 className="text-xl font-semibold mb-3">Rapid Delivery</h3>
                 <p className="text-muted-foreground">
-                  Agile execution for faster time-to-market.
+                  Fast-track your digital transformation with our agile development and release management.
                 </p>
               </CardContent>
             </Card>
@@ -78,7 +78,7 @@ const Home = () => {
                 <Target className="h-12 w-12 text-primary mx-auto mb-4" />
                 <h3 className="text-xl font-semibold mb-3">Strategic Advisory</h3>
                 <p className="text-muted-foreground">
-                  Align AI with business outcomes.
+                  Expert guidance on data strategy, digital transformation, and AI implementation.
                 </p>
               </CardContent>
             </Card>
@@ -92,7 +92,7 @@ const Home = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Expertise</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Explore how we help businesses harness AI and data.
+              We help businesses harness the power of AI across strategy, engineering, and operations.
             </p>
           </div>
 
@@ -100,9 +100,9 @@ const Home = () => {
             <Card className="p-8 text-center shadow-card hover:shadow-glow transition-all">
               <h3 className="text-xl font-semibold mb-4">Strategy & Advisory</h3>
               <p className="text-muted-foreground mb-4">
-                Roadmaps & platform strategies.
+                Analytics roadmap, Data & Platform strategy tailored for business outcomes.
               </p>
-              <Link to="/strategyadvisory">
+              <Link to="/services">
                 <Button variant="link" className="text-primary">
                   Know more →
                 </Button>
@@ -112,9 +112,9 @@ const Home = () => {
             <Card className="p-8 text-center shadow-card hover:shadow-glow transition-all">
               <h3 className="text-xl font-semibold mb-4">Engineer Your Data</h3>
               <p className="text-muted-foreground mb-4">
-                Modernize and scale your data.
+                Data modernization, foundation, and operations to unlock value.
               </p>
-              <Link to="/engineerdata">
+              <Link to="/services">
                 <Button variant="link" className="text-primary">
                   Know more →
                 </Button>
@@ -122,11 +122,11 @@ const Home = () => {
             </Card>
 
             <Card className="p-8 text-center shadow-card hover:shadow-glow transition-all">
-              <h3 className="text-xl font-semibold mb-4">Differentiate AI-ML</h3>
+              <h3 className="text-xl font-semibold mb-4">Differentiate with AI/ML</h3>
               <p className="text-muted-foreground mb-4">
-                Create value with AI & ML.
+                Data science, AI engineering, and ML platforms for innovation.
               </p>
-              <Link to="/DifferentiateAI">
+              <Link to="/services">
                 <Button variant="link" className="text-primary">
                   Know more →
                 </Button>
@@ -136,9 +136,9 @@ const Home = () => {
             <Card className="p-8 text-center shadow-card hover:shadow-glow transition-all">
               <h3 className="text-xl font-semibold mb-4">Operationalize Insights</h3>
               <p className="text-muted-foreground mb-4">
-                Scale analytics & AI in workflows.
+                Consulting, application engineering, BI, and MLOps for scale.
               </p>
-              <Link to="/operationalizeinsights">
+              <Link to="/services">
                 <Button variant="link" className="text-primary">
                   Know more →
                 </Button>
@@ -148,124 +148,91 @@ const Home = () => {
         </div>
       </section>
 
-            {/* Latest Products Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Latest Products</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Explore our innovative AI-driven products designed to transform industries.
-            </p>
-          </div>
+      {/* Latest Products Section */}
+<section className="py-20 px-4 sm:px-6 lg:px-8">
+  <div className="max-w-7xl mx-auto">
+    <div className="text-center mb-16">
+      <h2 className="text-3xl md:text-4xl font-bold mb-4">Latest Products</h2>
+      <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+        Explore our innovative AI-driven products designed to transform industries.
+      </p>
+    </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Travel Genie */}
-            <Card className="shadow-card hover:shadow-glow transition-all">
-              <CardContent className="p-6">
-                <div className="flex items-center mb-4">
-                  <span className="h-10 w-10 text-primary mr-3">
-                    {/* Replace with icon */}
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-10 w-10"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M12 2C8.134 2 5 5.134 5 9c0 4.418 7 13 7 13s7-8.582 7-13c0-3.866-3.134-7-7-7z"
-                      />
-                    </svg>
-                  </span>
-                  <h3 className="text-xl font-semibold">Travel Genie</h3>
-                </div>
-                <p className="text-muted-foreground mb-4">
-                  Intelligent travel planning powered by AI to create personalized itineraries, find the best deals, and optimize your journey.
-                </p>
-                <ul className="list-disc list-inside text-sm text-muted-foreground space-y-1">
-                  <li>Smart itinerary generation</li>
-                  <li>Real-time price optimization</li>
-                  <li>Personalized recommendations</li>
-                  <li>Multi-language support</li>
-                </ul>
-              </CardContent>
-            </Card>
+    <div className="grid md:grid-cols-3 gap-8">
+      {/* Travel Genie */}
+      <Card className="shadow-card hover:shadow-glow transition-all">
+        <CardContent className="p-6">
+         <img
+            src="/images/ai-travel-app.png"
+            alt="Travel Genie"
+            className="rounded-xl mb-6 w-full h-48 object-cover"
+          />
+          <h3 className="text-xl font-semibold mb-3">AI Travel App</h3>
+          <p className="text-muted-foreground mb-4">
+            Intelligent travel planning with personalized recommendations, real-time updates, and seamless booking.
+          </p>
+          <ul className="text-muted-foreground list-disc list-inside mb-6">
+            <li>Smart Itinerary Planning</li>
+            <li>Real-time Recommendations</li>
+            <li>Price Optimization</li>
+            <li>Local Insights</li>
+          </ul>
+          <Link to="/products">
+            <Button className="w-full">View Product</Button>
+          </Link>
+        </CardContent>
+      </Card>
 
-            {/* Audio Genie */}
-            <Card className="shadow-card hover:shadow-glow transition-all">
-              <CardContent className="p-6">
-                <div className="flex items-center mb-4">
-                  <span className="h-10 w-10 text-primary mr-3">
-                    {/* Replace with icon */}
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-10 w-10"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M9 19V6h13M9 6L5 9m0 6l4 3"
-                      />
-                    </svg>
-                  </span>
-                  <h3 className="text-xl font-semibold">Audio Genie</h3>
-                </div>
-                <p className="text-muted-foreground mb-4">
-                  Revolutionary audio management system that uses AI to organize, categorize, and enhance your audio content.
-                </p>
-                <ul className="list-disc list-inside text-sm text-muted-foreground space-y-1">
-                  <li>Automated audio categorization</li>
-                  <li>AI-powered search</li>
-                  <li>Quality enhancement</li>
-                  <li>Smart playlist creation</li>
-                </ul>
-              </CardContent>
-            </Card>
+      {/* Audio Genie */}
+      <Card className="shadow-card hover:shadow-glow transition-all">
+        <CardContent className="p-6">
+          <img
+            src="/images/ai-audio-library.png"
+            alt="AI Audio Library"
+            className="rounded-xl mb-6 w-full h-48 object-cover"
+          />
+          <h3 className="text-xl font-semibold mb-3">AI Audio Library</h3>
+          <p className="text-muted-foreground mb-4">
+            Smart audio content management with real-time search, classification, and intelligent tagging.
+          </p>
+          <ul className="text-muted-foreground list-disc list-inside mb-6">
+            <li>Content Recommendation</li>
+            <li>Real-time Classification</li>
+            <li>Intelligent Tagging</li>
+            <li>Seamless Access</li>
+          </ul>
+          <Link to="/products">
+            <Button className="w-full">View Product</Button>
+          </Link>
+        </CardContent>
+      </Card>
 
-            {/* Genie Workflow */}
-            <Card className="shadow-card hover:shadow-glow transition-all">
-              <CardContent className="p-6">
-                <div className="flex items-center mb-4">
-                  <span className="h-10 w-10 text-primary mr-3">
-                    {/* Replace with icon */}
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-10 w-10"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
-                  </span>
-                  <h3 className="text-xl font-semibold">Genie Workflow</h3>
-                </div>
-                <p className="text-muted-foreground mb-4">
-                  Streamline your business processes with AI-driven workflow automation that learns from your patterns.
-                </p>
-                <ul className="list-disc list-inside text-sm text-muted-foreground space-y-1">
-                  <li>Process automation</li>
-                  <li>Intelligent routing</li>
-                  <li>Performance analytics</li>
-                  <li>Custom integrations</li>
-                </ul>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
+      {/* Genie Workflow */}
+      <Card className="shadow-card hover:shadow-glow transition-all">
+        <CardContent className="p-6">
+          <img
+            src="/images/ai-workflow-app.png"
+            alt="AI Workflow App"
+            className="rounded-xl mb-6 w-full h-48 object-cover"
+          />
+          <h3 className="text-xl font-semibold mb-3">AI Workflow App</h3>
+          <p className="text-muted-foreground mb-4">
+            Streamline business processes with intelligent automation, predictive analysis, and adaptive workflows.
+          </p>
+          <ul className="text-muted-foreground list-disc list-inside mb-6">
+            <li>Process Automation</li>
+            <li>Predictive Analysis</li>
+            <li>Smart Scheduling</li>
+            <li>Performance Insights</li>
+          </ul>
+          <Link to="/products">
+            <Button className="w-full">View Product</Button>
+          </Link>
+        </CardContent>
+      </Card>
+    </div>
+  </div>
+</section>
 
 
       {/* CTA Section */}
@@ -277,7 +244,7 @@ const Home = () => {
           <p className="text-xl text-muted-foreground mb-8">
             Let's discuss how our AI solutions and advisory services can accelerate your growth.
           </p>
-          <Link to="/contact">
+          <Link to="/login">
             <Button size="lg" className="shadow-glow">
               Get Started Today
             </Button>
