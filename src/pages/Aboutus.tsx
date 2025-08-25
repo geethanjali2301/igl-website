@@ -60,7 +60,7 @@ const AboutUs = () => {
             <CardContent className="p-6 text-center">
               <div className="h-24 w-24 rounded-full mx-auto mb-4 bg-gradient-primary" />
               <h3 className="text-xl font-semibold">Hari Katukota</h3>
-              <p className="text-muted-foreground">Designation</p>
+              <p className="text-muted-foreground">Product</p>
             </CardContent>
           </Card>
 
@@ -69,7 +69,7 @@ const AboutUs = () => {
             <CardContent className="p-6 text-center">
               <div className="h-24 w-24 rounded-full mx-auto mb-4 bg-gradient-primary" />
               <h3 className="text-xl font-semibold">Manjunath Ratakonda</h3>
-              <p className="text-muted-foreground">Designation</p>
+              <p className="text-muted-foreground">Technology</p>
             </CardContent>
           </Card>
 
@@ -78,7 +78,7 @@ const AboutUs = () => {
             <CardContent className="p-6 text-center">
               <div className="h-24 w-24 rounded-full mx-auto mb-4 bg-gradient-primary" />
               <h3 className="text-xl font-semibold">Teja Dandu</h3>
-              <p className="text-muted-foreground">Designation</p>
+              <p className="text-muted-foreground">Data / ML</p>
             </CardContent>
           </Card>
 
@@ -87,7 +87,7 @@ const AboutUs = () => {
             <CardContent className="p-6 text-center">
               <div className="h-24 w-24 rounded-full mx-auto mb-4 bg-gradient-primary" />
               <h3 className="text-xl font-semibold">Praneel Kumar Peruru</h3>
-              <p className="text-muted-foreground">Designation</p>
+              <p className="text-muted-foreground">India Operations</p>
             </CardContent>
           </Card>
         </div>
