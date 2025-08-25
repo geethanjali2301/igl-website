@@ -18,7 +18,7 @@ const Home = () => {
               </span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-              iGenieLabs empowers organizations with cutting-edge AI solutions,
+              iGenie Labs empowers organizations with cutting-edge AI solutions,
               strategic advisory services, and rapid product development to drive
               digital transformation and accelerate growth.
             </p>
