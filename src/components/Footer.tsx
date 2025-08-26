@@ -10,7 +10,7 @@ const Footer = () => {
           <div>
             <Link to="/" className="flex items-center gap-2 mb-4">
               <img
-                src="src/assets/logo.png"
+                src="@src/assets/logo.png"
                 alt="iGenieLabs logo"
                 className="h-16 w-auto"
               />
