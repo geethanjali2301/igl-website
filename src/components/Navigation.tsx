@@ -23,10 +23,10 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <img
+          <img
               src={logo}
-              alt="iGenie Labs Logo"
-              className="h-14 md:h-16 w-auto transition-transform duration-300 hover:scale-105"
+              alt="iGenie Labs"
+              className="h-12 md:h-24 w-auto transition-transform duration-300 hover:scale-105"
             />
           </Link>
 
