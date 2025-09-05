@@ -58,9 +58,6 @@ const Footer = () => {
               <a href="https://linkedin.com" target="_blank" rel="noreferrer">
                 <Linkedin className="h-6 w-6 text-muted-foreground hover:text-primary transition" />
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noreferrer">
-                <Twitter className="h-6 w-6 text-muted-foreground hover:text-primary transition" />
-              </a>
             </div>
           </div>
         </div>

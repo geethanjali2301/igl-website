@@ -54,13 +54,13 @@ const AboutUs = () => {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
           {/* Team Member 1 */}
           <Card className="shadow-card border-border">
             <CardContent className="p-6 text-center">
               <div className="h-24 w-24 rounded-full mx-auto mb-4 bg-gradient-primary" />
               <h3 className="text-xl font-semibold">Hari Katukota</h3>
-              <p className="text-muted-foreground">Product</p>
+              <p className="text-muted-foreground">Product Advisory</p>
             </CardContent>
           </Card>
 
@@ -68,8 +68,8 @@ const AboutUs = () => {
           <Card className="shadow-card border-border">
             <CardContent className="p-6 text-center">
               <div className="h-24 w-24 rounded-full mx-auto mb-4 bg-gradient-primary" />
-              <h3 className="text-xl font-semibold">Manjunath Ratakonda</h3>
-              <p className="text-muted-foreground">Technology</p>
+              <h3 className="text-xl font-semibold">Manju Ratakonda</h3>
+              <p className="text-muted-foreground">Technology Advisory</p>
             </CardContent>
           </Card>
 
@@ -78,7 +78,7 @@ const AboutUs = () => {
             <CardContent className="p-6 text-center">
               <div className="h-24 w-24 rounded-full mx-auto mb-4 bg-gradient-primary" />
               <h3 className="text-xl font-semibold">Teja Dandu</h3>
-              <p className="text-muted-foreground">Data / ML</p>
+              <p className="text-muted-foreground">Data/ML Advisory</p>
             </CardContent>
           </Card>
 
@@ -86,8 +86,17 @@ const AboutUs = () => {
           <Card className="shadow-card border-border">
             <CardContent className="p-6 text-center">
               <div className="h-24 w-24 rounded-full mx-auto mb-4 bg-gradient-primary" />
-              <h3 className="text-xl font-semibold">Praneel Kumar Peruru</h3>
+              <h3 className="text-xl font-semibold">Praneel Peruru</h3>
               <p className="text-muted-foreground">India Operations</p>
+            </CardContent>
+          </Card>
+
+          {/* Team Member 5 */}
+          <Card className="shadow-card border-border">
+            <CardContent className="p-6 text-center">
+              <div className="h-24 w-24 rounded-full mx-auto mb-4 bg-gradient-primary" />
+              <h3 className="text-xl font-semibold">Soujanya Suddapalli</h3>
+              <p className="text-muted-foreground">US Operations</p>
             </CardContent>
           </Card>
         </div>

@@ -5,39 +5,40 @@ import { ArrowRight, Sparkles, Zap, Target } from "lucide-react";
 
 const Home = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background pt-28">
       {/* Hero Section */}
-      <section className="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-hero opacity-50" />
-        <div className="relative max-w-7xl mx-auto text-center">
-          <div className="mb-8">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              Transforming Business with{" "}
-              <span className="bg-gradient-primary bg-clip-text text-transparent">
-                AI Innovation
-              </span>
-            </h1>
-            <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-              iGenie Labs empowers organizations with cutting-edge AI solutions,
-              strategic advisory services, and rapid product development to drive
-              digital transformation and accelerate growth.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/products">
-                <Button size="lg" className="group">
-                  Explore Products
-                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </Button>
-              </Link>
-              <Link to="/services">
-                <Button variant="outline" size="lg">
-                  Our Services
-                </Button>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+  <section className="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+  <div className="absolute inset-0 bg-gradient-hero opacity-50" />
+  <div className="relative max-w-7xl mx-auto text-center">
+    <div className="mb-8">
+      <h1 className="text-3xl md:text-5xl font-bold mb-4 leading-snug">
+        Transforming Business with{" "}
+        <span className="bg-gradient-primary bg-clip-text text-transparent">
+          AI Innovation
+        </span>
+      </h1>
+      <p className="text-lg md:text-xl text-muted-foreground mb-6 max-w-2xl mx-auto">
+        iGenie Labs empowers organizations with cutting-edge AI solutions,
+        strategic advisory services, and rapid product development to drive
+        digital transformation and accelerate growth.
+      </p>
+      <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <Link to="/products">
+          <Button size="lg" className="group">
+            Explore Products
+            <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+          </Button>
+        </Link>
+        <Link to="/services">
+          <Button variant="outline" size="lg">
+            Our Services
+          </Button>
+        </Link>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Why Choose iGenie Labs */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
