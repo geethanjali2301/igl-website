@@ -31,7 +31,7 @@ const Products = () => {
     },
     {
       icon: Workflow,
-      title: "Genie Workflow",
+      title: "Workflow Genie",
       description:
         "Streamline your business processes with AI-driven workflow automation that learns from your patterns and optimizes operations in real-time.",
       features: [

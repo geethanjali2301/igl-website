@@ -230,7 +230,7 @@ const Home = () => {
               </CardContent>
             </Card>
 
-            {/* Genie Workflow */}
+            {/* Workflow Genie */}
             <Card className="shadow-card hover:shadow-glow transition-all">
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
@@ -251,7 +251,7 @@ const Home = () => {
                       />
                     </svg>
                   </span>
-                  <h3 className="text-xl font-semibold">Genie Workflow</h3>
+                  <h3 className="text-xl font-semibold">Workflow Genie</h3>
                 </div>
                 <p className="text-muted-foreground mb-4">
                   Streamline your business processes with AI-driven workflow automation that learns from your patterns.
