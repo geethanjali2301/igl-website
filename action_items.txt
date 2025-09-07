@@ -88,3 +88,6 @@ Description: “Explore iGenie Labs’ AI-first advisory services: Data, Digital
 ABOUT -----> SEO / Meta Description Update:“iGenie Labs is an AI-first innovation company helping enterprises build intelligent products, scale data platforms, and accelerate digital transformation with measurable outcomes.”
 6.Add Pictures
 7.Create LinkedIn page
+8.Center the second line advisory page cards
+9. Company page-> Align core values to second row , center
+10. Capabilities page-> Center the cards

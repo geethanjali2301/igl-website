@@ -44,11 +44,10 @@ const Home = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Why Choose iGenie Labs?
+              Why iGenie Labs?
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              We combine deep technical expertise with strategic vision to deliver
-              transformative AI solutions that drive real business value.
+              AI-first expertise. Strategic vision. Real outcomes.
             </p>
           </div>
 
@@ -92,7 +91,7 @@ const Home = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Expertise</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Explore how we help businesses harness AI and data.
+              We help businesses harness the full power of AI and data — building intelligent capabilities that drive measurable outcomes.
             </p>
           </div>
 
@@ -104,7 +103,7 @@ const Home = () => {
               </p>
               <Link to="/strategyadvisory">
                 <Button variant="link" className="text-primary">
-                  Know more →
+                  Learn more →
                 </Button>
               </Link>
             </Card>
@@ -116,7 +115,7 @@ const Home = () => {
               </p>
               <Link to="/engineerdata">
                 <Button variant="link" className="text-primary">
-                  Know more →
+                  Learn more →
                 </Button>
               </Link>
             </Card>
@@ -128,7 +127,7 @@ const Home = () => {
               </p>
               <Link to="/DifferentiateAI">
                 <Button variant="link" className="text-primary">
-                  Know more →
+                  Learn more →
                 </Button>
               </Link>
             </Card>
@@ -140,7 +139,7 @@ const Home = () => {
               </p>
               <Link to="/operationalizeinsights">
                 <Button variant="link" className="text-primary">
-                  Know more →
+                  Learn more →
                 </Button>
               </Link>
             </Card>
