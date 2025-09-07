@@ -69,4 +69,3 @@
 8. Check alignments of all the pages ->Done
 9. Make common representation of iGenie Labs in all pages ->Done
 10. Internal pages -> Tabs for advisory services ->Done
-11. Remove Learn More-> Done

@@ -18,13 +18,13 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background flex items-center justify-center px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-background pt-28 flex items-center justify-center px-4 sm:px-6 lg:px-8">
       <div className="w-full max-w-md">
         {/* Header */}
         <div className="text-center mb-8">
           <Link to="/" className="inline-block">
             <div className="text-3xl font-bold bg-gradient-primary bg-clip-text text-transparent mb-2">
-              igenielabs
+              iGenie Labs
             </div>
           </Link>
           <h1 className="text-2xl font-bold text-foreground">Welcome back</h1>

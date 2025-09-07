@@ -26,7 +26,7 @@ const Navigation = () => {
             <img
               src={logo}
               alt="iGenie Labs"
-              className="h-16 md:h-36 w-auto transition-transform duration-300 hover:scale-105"
+              className="h-17 md:h-36 w-auto transition-transform duration-300 hover:scale-105"
             />
           </Link>
 
