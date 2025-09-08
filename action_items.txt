@@ -71,9 +71,9 @@
 10. Internal pages -> Tabs for advisory services ->Done
 
 ------------------ 07/09/2025
-1. Make bullet points in Our core values
+1. Make bullet points in Our core values -> Done
 2. Strategy page -> add bullets, change icons for new additions, 
-3. Increase space between two lines in strategy page
+3. Increase space between two lines in strategy page -> Done
 4. Heading need to set correctly without characters cut
 5. Add Meta
    META INFO:  HOME-----> Meta / SEO Enhancements: Replace generic description with:
@@ -86,8 +86,8 @@ SERVICES -------> SEO / Meta Update:Title: AI Advisory Services | iGenie Labs �
 Description: “Explore iGenie Labs’ AI-first advisory services: Data, Digital, Product Engineering, Rapid Release, and AI Advisory. Embedding AI at the core to accelerate transformation.”
  
 ABOUT -----> SEO / Meta Description Update:“iGenie Labs is an AI-first innovation company helping enterprises build intelligent products, scale data platforms, and accelerate digital transformation with measurable outcomes.”
-6.Add Pictures
+6.Add Pictures -> Done
 7.Create LinkedIn page
-8.Center the second line advisory page cards
-9. Company page-> Align core values to second row , center
-10. Capabilities page-> Center the cards
+8.Center the second line advisory page cards -> Done
+9. Company page-> Align core values to second row , center -> Done
+10. Capabilities page-> Center the cards -> Done

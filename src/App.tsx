@@ -15,11 +15,8 @@ import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import Footer from "./components/Footer";
 
-// 👇 Import the new service pages
-import StrategyAdvisory from "./pages/StrategyAdvisory";
-import EngineerData from "./pages/EngineerData";
-import DifferentiateAI from "./pages/DifferentiateAI";
-import OperationalizeInsights from "./pages/OperationalizeInsights";
+// 👇 Import the new Capabilities page
+import Capabilities from "./pages/Capabilities";
 
 const queryClient = new QueryClient();
 
@@ -41,11 +38,8 @@ const App = () => (
               <Route path="/contact" element={<Contact />} />
               <Route path="/login" element={<Login />} />
 
-              {/* 👇 Add service routes here */}
-              <Route path="/strategyadvisory" element={<StrategyAdvisory />} />
-              <Route path="/engineerdata" element={<EngineerData />} />
-              <Route path="/differentiateai" element={<DifferentiateAI />} />
-              <Route path="/operationalizeinsights" element={<OperationalizeInsights />} />
+              {/* 👇 Add Capabilities route */}
+              <Route path="/capabilities" element={<Capabilities />} />
 
               {/* Catch-all */}
               <Route path="*" element={<NotFound />} />

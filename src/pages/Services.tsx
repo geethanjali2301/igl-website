@@ -87,49 +87,50 @@ const Services = () => {
       </section>
 
       {/* Services Grid */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service, index) => (
-              <Card
-                key={index}
-                className="border-border bg-gradient-card shadow-card hover:shadow-glow transition-all duration-300 group"
-              >
-                <CardHeader className="pb-4">
-                  <div className="flex items-center mb-4">
-                    <div className="p-3 rounded-lg bg-primary/10 border border-primary/20">
-                      <service.icon className="h-8 w-8 text-primary" />
-                    </div>
-                  </div>
-                  <CardTitle className="text-xl mb-2">{service.title}</CardTitle>
-                  {/* ✅ Description now matches offerings size */}
-                  <p className="text-md text-muted-foreground">
-                    {service.description}
-                  </p>
-                </CardHeader>
-                <CardContent>
-                  <div className="mb-6">
-                    <h4 className="font-semibold mb-3 text-foreground text-md">
-                      What We Offer:
-                    </h4>
-                    <ul className="space-y-2">
-                      {service.offerings.map((offering, offeringIndex) => (
-                        <li
-                          key={offeringIndex}
-                          className="flex items-center text-sm text-muted-foreground"
-                        >
-                          <div className="w-1.5 h-1.5 bg-primary rounded-full mr-2 flex-shrink-0" />
-                          {offering}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
+<section className="py-16 px-4 sm:px-6 lg:px-8">
+  <div className="max-w-7xl mx-auto">
+    <div className="flex flex-wrap justify-center gap-8">
+      {services.map((service, index) => (
+        <Card
+          key={index}
+          className="border-border bg-gradient-card shadow-card hover:shadow-glow transition-all duration-300 group w-full max-w-sm"
+        >
+          <CardHeader className="pb-4">
+            <div className="flex items-center mb-4">
+              <div className="p-3 rounded-lg bg-primary/10 border border-primary/20">
+                <service.icon className="h-8 w-8 text-primary" />
+              </div>
+            </div>
+            <CardTitle className="text-xl mb-2">{service.title}</CardTitle>
+            <p className="text-md text-muted-foreground">
+              {service.description}
+            </p>
+          </CardHeader>
+          <CardContent>
+            <div className="mb-6">
+              <h4 className="font-semibold mb-3 text-foreground text-md">
+                What We Offer:
+              </h4>
+              <ul className="space-y-2">
+                {service.offerings.map((offering, offeringIndex) => (
+                  <li
+                    key={offeringIndex}
+                    className="flex items-center text-sm text-muted-foreground"
+                  >
+                    <div className="w-1.5 h-1.5 bg-primary rounded-full mr-2 flex-shrink-0" />
+                    {offering}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </CardContent>
+        </Card>
+      ))}
+    </div>
+  </div>
+</section>
+
+
 
       {/* Process Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-hero">
