@@ -55,31 +55,28 @@ const AboutUs = () => {
           </Card>
 
           {/* Core Values - centered */}
-          <div className="md:col-span-2 flex justify-center">
-            <Card className="shadow-card border-border bg-gradient-card inline-block max-w-xl w-full">
-              <CardContent className="p-8 text-center">
-                <h2 className="text-2xl font-semibold mb-6">Core Values</h2>
-                <ul className="space-y-3 text-muted-foreground text-left">
-                  <li className="whitespace-nowrap">
-                    <strong>AI-First by Design</strong> → Intelligence is the
-                    foundation, not an add-on.
-                  </li>
-                  <li className="whitespace-nowrap">
-                    <strong>Speed with Purpose</strong> → Fast delivery,
-                    measurable outcomes.
-                  </li>
-                  <li className="whitespace-nowrap">
-                    <strong>Responsible AI</strong> → Ethical, transparent, and
-                    compliant innovation.
-                  </li>
-                  <li className="whitespace-nowrap">
-                    <strong>Partnership for Growth</strong> → Co-creating
-                    solutions with our clients.
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
-          </div>
+<div className="md:col-span-2 flex justify-center">
+  <Card className="shadow-card border-border bg-gradient-card inline-block max-w-xl w-full">
+    <CardContent className="p-8 text-center">
+      <h2 className="text-2xl font-semibold mb-6">Core Values</h2>
+      <ul className="space-y-3 text-muted-foreground text-left break-words">
+        <li>
+          <strong>AI-First by Design</strong> → Intelligence is the foundation, not an add-on.
+        </li>
+        <li>
+          <strong>Speed with Purpose</strong> → Fast delivery, measurable outcomes.
+        </li>
+        <li>
+          <strong>Responsible AI</strong> → Ethical, transparent, and compliant innovation.
+        </li>
+        <li>
+          <strong>Partnership for Growth</strong> → Co-creating solutions with our clients.
+        </li>
+      </ul>
+    </CardContent>
+  </Card>
+</div>
+
         </div>
       </section>
 

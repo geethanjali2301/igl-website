@@ -91,3 +91,7 @@ ABOUT -----> SEO / Meta Description Update:“iGenie Labs is an AI-first innovat
 8.Center the second line advisory page cards -> Done
 9. Company page-> Align core values to second row , center -> Done
 10. Capabilities page-> Center the cards -> Done
+---------------------------------08/09/2025
+1. Teja photo
+2. SEO Part (Meta)
+3. favicon HD image
