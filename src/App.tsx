@@ -17,6 +17,10 @@ import Footer from "./components/Footer";
 
 import Publishers from "./pages/Publishers";
 
+import Boundless from "./pages/library-solutions/Boundless";
+import Epopup from "./pages/library-solutions/Epopup";
+import ContentServices from "./pages/library-solutions/ContentServices";
+
 // 👇 Import the new Capabilities page
 import Capabilities from "./pages/Capabilities";
 
@@ -40,13 +44,17 @@ const App = () => (
               <Route path="/publishers" element={<Publishers />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/login" element={<Login />} />
-
-              {/* 👇 Add Capabilities route */}
               <Route path="/capabilities" element={<Capabilities />} />
 
-              {/* Catch-all */}
+              {/* library solutions routes — must come BEFORE the catch-all */}
+              <Route path="/library-solutions/boundless" element={<Boundless />} />
+              <Route path="/library-solutions/epopup" element={<Epopup />} />
+              <Route path="/library-solutions/content-services" element={<ContentServices />} />
+
+              {/* Catch-all at the very end */}
               <Route path="*" element={<NotFound />} />
             </Routes>
+
           </div>
           <Footer />
         </div>

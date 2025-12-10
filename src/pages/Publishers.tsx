@@ -4,7 +4,12 @@ import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/
 
 const Publishers = () => {
   return (
-    <main className="container mx-auto px-6 py-12">
+    <main
+      // add top padding so fixed header does not cover content
+      // pt-20 for small screens, pt-28 for md+ (matches header height)
+      className="container mx-auto px-6 pt-20 md:pt-28 pb-12"
+      aria-label="Publishers page"
+    >
       {/* Header */}
       <h1 className="text-3xl font-bold mb-4">For Publishers</h1>
       <p className="text-muted-foreground mb-6">
@@ -46,9 +51,8 @@ const Publishers = () => {
       {/* Accordion Section */}
       <section className="mt-10">
         <Accordion type="single" collapsible className="w-full">
-
           <AccordionItem value="item-1">
-            <AccordionTrigger>DRM & Rights Protection</AccordionTrigger>
+            <AccordionTrigger>DRM &amp; Rights Protection</AccordionTrigger>
             <AccordionContent>
               We support Adobe DRM, LCP, and enforce publisher-defined entitlements. 
               All access events include audit logs retained according to contractual terms.
@@ -56,21 +60,20 @@ const Publishers = () => {
           </AccordionItem>
 
           <AccordionItem value="item-2">
-            <AccordionTrigger>Data Privacy & Security</AccordionTrigger>
+            <AccordionTrigger>Data Privacy &amp; Security</AccordionTrigger>
             <AccordionContent>
-              Full encryption at rest & in transit, IAM with least-privilege roles, 
+              Full encryption at rest &amp; in transit, IAM with least-privilege roles, 
               periodic penetration testing, and continuous compliance monitoring.
             </AccordionContent>
           </AccordionItem>
 
           <AccordionItem value="item-3">
-            <AccordionTrigger>SLA & Reporting</AccordionTrigger>
+            <AccordionTrigger>SLA &amp; Reporting</AccordionTrigger>
             <AccordionContent>
               99.9% uptime SLA, operational dashboards, monthly reconciliation, 
-              and audit-ready financial & usage settlement reporting.
+              and audit-ready financial &amp; usage settlement reporting.
             </AccordionContent>
           </AccordionItem>
-
         </Accordion>
       </section>
 
@@ -80,7 +83,7 @@ const Publishers = () => {
           <Button>Request Publisher Due Diligence Pack</Button>
         </Link>
         <Link to="/contact" className="ml-4">
-          <Button variant="outline">Publisher & Library Inquiries</Button>
+          <Button variant="outline">Publisher &amp; Library Inquiries</Button>
         </Link>
       </div>
     </main>
