@@ -12,7 +12,7 @@ const Home: React.FC = () => {
             Enterprise Digital Platforms for Content, Commerce & Data
           </h1>
 
-          <p className="mt-6 text-lg text-[hsl(var(--muted))] max-w-2xl">
+          <p className="mt-6 text-lg text-black max-w-2xl">
             iGenie Labs builds and operates secure, scalable platforms for content distribution,
             metadata systems, eCommerce, and enterprise cloud infrastructure.
           </p>
@@ -24,14 +24,6 @@ const Home: React.FC = () => {
           <div className="mt-8 flex flex-wrap gap-3">
             <Link to="/products" className="inline-flex items-center rounded-xl bg-[hsl(var(--primary))] text-white px-5 py-3 text-sm font-semibold shadow-glow">
               Explore Our Platforms
-            </Link>
-
-            <Link to="/publishers" className="inline-flex items-center rounded-xl border border-[hsl(var(--border))] bg-white px-5 py-3 text-sm font-medium">
-              For Publishers
-            </Link>
-
-            <Link to="/contact" className="inline-flex items-center text-sm px-4 py-3">
-              Partner With Us
             </Link>
           </div>
         </div>
