@@ -16,8 +16,7 @@ const Home: React.FC = () => {
             iGenie Labs builds and operates secure, scalable platforms for content distribution,
             metadata systems, eCommerce, and enterprise cloud infrastructure.
           </p>
-
-          <p className="mt-4 text-sm text-[hsl(var(--muted))]">
+          <p className="mt-4 text-sm text-black">
             DRM-compliant delivery • Audit-ready reporting • Publisher contract compliance
           </p>
 
