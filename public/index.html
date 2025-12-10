@@ -1,10 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <title>iGenie Labs — Enterprise Digital Platforms for Content & Data</title>
+
+    <meta name="description" content="iGenie Labs builds secure, scalable platforms for content distribution, metadata systems, eCommerce, and enterprise cloud infrastructure — trusted by publishers, libraries and digital content organizations." />
+    <link rel="canonical" href="https://www.igenielabs.com/" />
+    <meta name="theme-color" content="#0f172a" />
+
+    <!-- Open Graph / Social -->
+    <meta property="og:site_name" content="iGenie Labs" />
+    <meta property="og:title" content="iGenie Labs — Enterprise Digital Platforms for Content & Data" />
+    <meta property="og:description" content="Secure, scalable platforms for content distribution, metadata, commerce, and enterprise cloud infrastructure — built for publishers and libraries." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.igenielabs.com/" />
+    <!-- Replace with your production image if available -->
+    <meta property="og:image" content="https://www.igenielabs.com/assets/og-image.png" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="iGenie Labs — Enterprise Digital Platforms for Content & Data" />
+    <meta name="twitter:description" content="Secure, scalable platforms for content distribution, metadata, commerce, and enterprise cloud infrastructure — built for publishers and libraries." />
+    <meta name="twitter:image" content="https://www.igenielabs.com/assets/og-image.png" />
+
+    <!-- JSON-LD Organization (publisher-friendly / due-diligence info) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "iGenie Labs",
+        "url": "https://www.igenielabs.com/",
+        "logo": "https://www.igenielabs.com/assets/logo.png",
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "telephone": "+1-704-703-8060",
+            "contactType": "customer service",
+            "email": "info@igenielabs.com",
+            "areaServed": "Worldwide",
+            "availableLanguage": ["English"]
+          }
+        ],
+        "sameAs": [
+          "https://www.linkedin.com/company/igenielabs"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "3540 Toringdon Way Suite 200 #1043",
+          "addressLocality": "Charlotte",
+          "addressRegion": "NC",
+          "postalCode": "28277",
+          "addressCountry": "US"
+        }
+      }
+    </script>
+
+    <!-- Firebase compat SDKs (kept from original) -->
     <!-- update the version number as needed -->
     <script defer src="/__/firebase/12.1.0/firebase-app-compat.js"></script>
     <!-- include only the Firebase features as you need -->
@@ -17,71 +70,172 @@
     <script defer src="/__/firebase/12.1.0/firebase-analytics-compat.js"></script>
     <script defer src="/__/firebase/12.1.0/firebase-remote-config-compat.js"></script>
     <script defer src="/__/firebase/12.1.0/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
+
+    <!-- initialize the SDK after all desired features are loaded -->
     <script defer src="/__/firebase/init.js?useEmulator=true"></script>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
+    <style>
+      :root {
+        --bg: #f8fafc;
+        --card: #ffffff;
+        --muted: rgba(17, 24, 39, 0.6);
+        --accent: #0ea5a0;
+      }
+
+      html, body {
+        height: 100%;
+        margin: 0;
+        font-family: Inter, Roboto, -apple-system, "Segoe UI", "Helvetica Neue", Arial;
+        background: var(--bg);
+        color: #0f172a;
+      }
+
+      /* App root fills viewport */
+      #root {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      /* Fallback message (when JS disabled) */
+      .nojs-card {
+        max-width: 760px;
+        width: 92%;
+        background: var(--card);
+        padding: 28px;
+        border-radius: 12px;
+        box-shadow: 0 8px 30px rgba(2,6,23,0.08);
+        text-align: left;
+      }
+
+      .brand {
+        display: flex;
+        gap: 14px;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .brand img {
+        height: 48px;
+        width: auto;
+      }
+
+      .h1 {
+        font-size: 20px;
+        font-weight: 700;
+        margin: 8px 0 12px;
+      }
+
+      .muted {
+        color: var(--muted);
+        line-height: 1.5;
+      }
+
+      .cta {
+        display: inline-block;
+        margin-top: 18px;
+        padding: 12px 18px;
+        background: var(--accent);
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: 600;
+      }
+
+      .links { margin-top: 16px; display:flex; gap:12px; flex-wrap:wrap; }
+
+      /* small footer */
+      .small-foot {
+        margin-top: 16px;
+        font-size: 13px;
+        color: var(--muted);
+      }
+
+      @media (max-width: 640px) {
+        .h1 { font-size: 18px; }
+        .brand img { height: 40px; }
       }
     </style>
   </head>
+
   <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+    <!-- React root (app should mount here) -->
+    <div id="root">
+      <!-- JavaScript-enabled app will mount here.
+           If JS is disabled, show a friendly informational fallback. -->
+      <noscript>
+        <div class="nojs-card" role="status" aria-live="polite">
+          <div class="brand">
+            <img src="/assets/logo.png" alt="iGenie Labs" />
+            <div>
+              <div style="font-size:14px;color:#374151;">iGenie Labs</div>
+              <div class="muted" style="font-size:12px;">Enterprise Digital Platforms</div>
+            </div>
+          </div>
+
+          <div class="h1">Our site requires JavaScript to load the full application.</div>
+
+          <div class="muted">
+            iGenie Labs builds secure, scalable cloud platforms for content delivery, metadata systems, commerce, and enterprise data infrastructure — trusted by publishers and libraries.
+          </div>
+
+          <div class="links">
+            <a class="cta" href="mailto:info@igenielabs.com">Contact Us</a>
+            <a class="cta" href="/publishers" style="background:#111827">For Publishers</a>
+            <a class="cta" href="/contact" style="background:#374151">Request Due Diligence Pack</a>
+          </div>
+
+          <div class="small-foot">
+            DRM • Data Privacy • Contract Compliance • Audit-ready Reporting
+          </div>
+        </div>
+      </noscript>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+
+    <!-- Lightweight fallback message while Firebase SDK loads (keeps original script behavior) -->
+    <div id="sdk-load" style="position:fixed;right:12px;bottom:12px;padding:8px 12px;border-radius:8px;background:#fff;box-shadow:0 6px 20px rgba(2,6,23,0.08);font-size:12px;color:#334155;">
+      Firebase SDK Loading…
+    </div>
 
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
+      // show which firebase compat features are available (keeps the behavior in your original)
+      document.addEventListener('DOMContentLoaded', function () {
+        const loadEl = document.getElementById('sdk-load');
         try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+          if (typeof firebase === 'undefined') {
+            loadEl.textContent = 'Firebase SDK not found (check hosting path).';
+            return;
+          }
+          let app = firebase.app ? firebase.app() : null;
+          if (!app) {
+            loadEl.textContent = 'Firebase app not initialized.';
+            return;
+          }
+
+          const features = [
+            { key: 'auth', label: 'Auth' },
+            { key: 'database', label: 'Database' },
+            { key: 'firestore', label: 'Firestore' },
+            { key: 'functions', label: 'Functions' },
+            { key: 'messaging', label: 'Messaging' },
+            { key: 'storage', label: 'Storage' },
+            { key: 'analytics', label: 'Analytics' },
+            { key: 'remoteConfig', label: 'RemoteConfig' },
+            { key: 'performance', label: 'Performance' }
+          ].filter(f => typeof app[f.key] === 'function')
+           .map(f => f.label);
+
+          if (features.length) {
+            loadEl.textContent = 'Firebase SDK loaded: ' + features.join(', ');
+            setTimeout(() => { loadEl.style.display = 'none'; }, 3500);
+          } else {
+            loadEl.textContent = 'Firebase SDK loaded (no features detected).';
+            setTimeout(() => { loadEl.style.display = 'none'; }, 3500);
+          }
         } catch (e) {
           console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+          loadEl.textContent = 'Error initializing Firebase SDK (see console).';
         }
       });
     </script>

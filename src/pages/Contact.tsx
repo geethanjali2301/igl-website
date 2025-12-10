@@ -56,14 +56,15 @@ const Contact = () => {
           {/* Google Map */}
           <div className="rounded-xl overflow-hidden shadow-card border border-border h-full">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d208816.08385325148!2d-80.8971405!3d35.1378791!3m2!1i1024!2i768!4f13.1!2m1!1s3540%20Toringdon%20Way%20Suite%20200%20%231043%20Charlotte%20NC%2028277%20iframe!5e0!3m2!1sen!2sin!4v1756052553146!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d208816.08385325148!2d-80.8971405!3d35.1378791!3m2!1i1024!2i768!4f13.1!2m1!1s3540%20Toringdon%20Way%20Suite%20200%20%231043%20Charlotte%20NC%2028277%20iframe!5e0!3m2!1sen!2sin!4v1756052553146!5m2!1sen!2sin"
               width="100%"
-              height="100%"
-              style={{ border: 0, minHeight: "500px" }}
-              allowFullScreen={true}
+              height="450"
+              style={{ border: 0 }}
+              allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
+              className="w-full rounded-xl shadow-card"
+            />
           </div>
         </div>
       </div>

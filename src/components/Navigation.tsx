@@ -10,16 +10,28 @@ const Navigation = () => {
 
   const isActive = (path: string) => location.pathname === path;
 
-  const navItems = [
+  // --- replace the navItems array and CTA area in Navigation.tsx ---
+ const navItems = [
     { path: "/", label: "Home" },
     { path: "/products", label: "AI Solutions" },
     { path: "/services", label: "Advisory" },
     { path: "/capabilities", label: "Capabilities" },
     { path: "/aboutus", label: "Company" },
-  ];
+];
+// In the right-side CTA area (desktop view) show a Publisher contact CTA
+// Replace the Login CTA block with:
+<div className="hidden md:flex items-center gap-4">
+  <Link to="/publishers" className="text-sm font-medium">
+    For Publishers
+  </Link>
+  <Link to="/contact">
+    <Button size="sm">Partner With Us</Button>
+  </Link>
+</div>
+
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-lg border-b border-border">
+    <nav className="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-lg border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-28">
           {/* Logo */}
@@ -38,7 +50,7 @@ const Navigation = () => {
                 key={item.path}
                 to={item.path}
                 className={`text-base md:text-md font-medium transition-colors hover:text-primary ${
-                  isActive(item.path) ? "text-primary" : "text-muted-foreground"
+                  isActive(item.path) ? "text-blue-600" : "text-gray-700"
                 }`}
               >
                 {item.label}
@@ -73,8 +85,8 @@ const Navigation = () => {
                   to={item.path}
                   className={`text-base font-medium transition-colors hover:text-primary ${
                     isActive(item.path)
-                      ? "text-primary"
-                      : "text-muted-foreground"
+                      ? "text-blue-600"
+                      : "text-gray-700"
                   }`}
                   onClick={() => setIsOpen(false)}
                 >

@@ -15,6 +15,8 @@ import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import Footer from "./components/Footer";
 
+import Publishers from "./pages/Publishers";
+
 // 👇 Import the new Capabilities page
 import Capabilities from "./pages/Capabilities";
 
@@ -35,6 +37,7 @@ const App = () => (
               <Route path="/aboutus" element={<Aboutus />} />
               <Route path="/products" element={<Products />} />
               <Route path="/services" element={<Services />} />
+              <Route path="/publishers" element={<Publishers />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/login" element={<Login />} />
 

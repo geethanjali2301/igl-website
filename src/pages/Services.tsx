@@ -1,68 +1,68 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Database, Globe, Wrench, Rocket, Brain } from "lucide-react";
+import { Database, Globe, Wrench, Rocket, ShieldCheck } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Services = () => {
   const services = [
     {
       icon: Database,
-      title: "Data Advisory",
+      title: "Data Engineering & Governance",
       description:
-        "Build an AI-ready data foundation. From governance to real-time analytics, we design strategies that unlock insights and fuel intelligence across the enterprise.",
+        "Design and operate resilient data foundations for analytics, reporting, and secure content workflows. We focus on data quality, pipelines, and governance so your systems are reliable and audit-ready.",
       offerings: [
-        "AI-ready data strategy",
-        "Intelligent architecture design",
-        "Governance frameworks for trust",
-        "Analytics for business impact",
+        "Data architecture & warehouse design",
+        "Metadata pipelines & catalog integration",
+        "Governance & access controls",
+        "Real-time analytics & reporting",
       ],
     },
     {
       icon: Globe,
-      title: "Digital Advisory",
+      title: "Cloud & Infrastructure",
       description:
-        "Redefine digital through AI. We guide modernization of platforms and processes so that every transformation step is powered by intelligence, not just technology.",
+        "Enterprise cloud architecture, multi-region deployments, and high-availability systems built on Azure and AWS. We deliver secure, scalable hosting and disaster recovery plans for publisher workloads.",
       offerings: [
-        "AI-infused transformation roadmaps",
-        "Technology modernization assessments",
-        "Process automation & optimization",
-        "Change adoption at scale",
+        "Cloud-native architecture (Azure / AWS)",
+        "High-availability & disaster recovery",
+        "Storage, streaming & CDN strategy",
+        "Infrastructure as code & cost optimization",
       ],
     },
     {
       icon: Wrench,
-      title: "Product Engineering Advisor",
+      title: "Product Engineering & Integration",
       description:
-        "Engineer products with AI at the core. From architecture to agile practices, we ensure engineering excellence that accelerates innovation and market impact.",
+        "Build production-grade platforms for content ingestion, catalog management, and commerce. We deliver robust APIs, EDI/FTP integrations, and engineering practices that scale with your business.",
       offerings: [
-        "AI-first architecture reviews",
-        "Development acceleration strategies",
-        "Code & quality audits",
-        "Team enablement for AI adoption",
+        "Architecture reviews & platform design",
+        "API & integration engineering (EDI, FTP, REST)",
+        "Quality, testing & release practices",
+        "Onboarding pipelines for publishers",
       ],
     },
     {
       icon: Rocket,
-      title: "Rapid Release Management",
+      title: "Release & Reliability Engineering",
       description:
-        "Deliver AI-powered software at speed. We optimize release pipelines with automation and intelligence to achieve faster, safer, and smarter deployments.",
+        "Safe, repeatable delivery pipelines and operational practices to keep publisher services available and auditable. We combine CI/CD, observability, and SRE practices to reduce risk and downtime.",
       offerings: [
-        "Intelligent CI/CD pipelines",
-        "Automated deployment orchestration",
-        "AI-enhanced release strategies",
-        "DevOps with continuous learning",
+        "CI/CD & deployment automation",
+        "Observability, logging & alerts",
+        "Runbooks, SLAs & incident response",
+        "Capacity planning & performance tuning",
       ],
     },
     {
-      icon: Brain,
-      title: "AI Advisor",
+      icon: ShieldCheck,
+      title: "Security, Compliance & DRM",
       description:
-        "Your trusted partner in AI adoption. From ethical frameworks to model deployment, we design strategies that ensure AI drives sustainable value at scale.",
+        "Security-first systems engineering for rights protection, privacy, and contract compliance. We implement DRM, encryption, identity controls, and audit-ready reporting for publisher workflows.",
       offerings: [
-        "AI-first business strategy",
-        "Implementation & scaling roadmap",
-        "Responsible AI & compliance",
-        "Model selection, training & tuning",
+        "DRM implementation & enforcement",
+        "Identity & access management",
+        "Encryption & data protection",
+        "Audit readiness & contractual compliance",
       ],
     },
   ];
@@ -73,74 +73,94 @@ const Services = () => {
       <section className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            AI-First{" "}
-            <span className="bg-gradient-primary bg-clip-text text-transparent">
-              Advisory Services
-            </span>
+            Technology & Infrastructure Advisory
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            We help organizations embed AI into the heart of their strategy, data, and technology. 
-            From vision to execution, our experts co-create solutions that accelerate transformation 
-            and deliver measurable outcomes.
+            We partner with publishers, libraries, and content platforms to design, build, and operate secure, compliant, and scalable systems — from cloud infrastructure and metadata pipelines to commerce and reporting.
           </p>
+          <p className="mt-4 text-sm text-muted-foreground">
+            Emphasis on enterprise-grade reliability, DRM and contract compliance, and long-term platform stewardship.
+          </p>
+
+          <div className="mt-8 flex flex-wrap justify-center gap-3">
+            <Link to="/publishers">
+              <Button>For Publishers</Button>
+            </Link>
+            <Link to="/contact">
+              <Button variant="outline">Partner With Us</Button>
+            </Link>
+            <Link to="/contact">
+              <Button variant="ghost">Request Platform Overview</Button>
+            </Link>
+          </div>
         </div>
       </section>
 
       {/* Services Grid */}
-<section className="py-16 px-4 sm:px-6 lg:px-8">
-  <div className="max-w-7xl mx-auto">
-    <div className="flex flex-wrap justify-center gap-8">
-      {services.map((service, index) => (
-        <Card
-          key={index}
-          className="border-border bg-gradient-card shadow-card hover:shadow-glow transition-all duration-300 group w-full max-w-sm"
-        >
-          <CardHeader className="pb-4">
-            <div className="flex items-center mb-4">
-              <div className="p-3 rounded-lg bg-primary/10 border border-primary/20">
-                <service.icon className="h-8 w-8 text-primary" />
-              </div>
-            </div>
-            <CardTitle className="text-xl mb-2">{service.title}</CardTitle>
-            <p className="text-md text-muted-foreground">
-              {service.description}
-            </p>
-          </CardHeader>
-          <CardContent>
-            <div className="mb-6">
-              <h4 className="font-semibold mb-3 text-foreground text-md">
-                What We Offer:
-              </h4>
-              <ul className="space-y-2">
-                {service.offerings.map((offering, offeringIndex) => (
-                  <li
-                    key={offeringIndex}
-                    className="flex items-center text-sm text-muted-foreground"
-                  >
-                    <div className="w-1.5 h-1.5 bg-primary rounded-full mr-2 flex-shrink-0" />
-                    {offering}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </CardContent>
-        </Card>
-      ))}
-    </div>
-  </div>
-</section>
+      <section className="py-12 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex flex-wrap justify-center gap-8">
+            {services.map((service, index) => (
+              <Card
+                key={index}
+                className="border-border bg-card shadow-card hover:shadow-lg transition-all duration-300 group w-full max-w-sm"
+              >
+                <CardHeader className="pb-4">
+                  <div className="flex items-center mb-4">
+                    <div
+                      aria-hidden
+                      className="p-3 rounded-lg bg-primary/10 border border-primary/20"
+                    >
+                      <service.icon className="h-6 w-6 text-primary" />
+                    </div>
+                  </div>
+                  <CardTitle className="text-xl mb-2">{service.title}</CardTitle>
+                  <p className="text-md text-muted-foreground">
+                    {service.description}
+                  </p>
+                </CardHeader>
+                <CardContent>
+                  <div className="mb-6">
+                    <h4 className="font-semibold mb-3 text-foreground text-md">
+                      Capabilities
+                    </h4>
+                    <ul className="space-y-2">
+                      {service.offerings.map((offering, offeringIndex) => (
+                        <li
+                          key={offeringIndex}
+                          className="flex items-center text-sm text-muted-foreground"
+                        >
+                          <span className="w-2 h-2 bg-primary rounded-full mr-3 flex-shrink-0" />
+                          {offering}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
 
-
+                  <div className="flex gap-3">
+                    <Link to="/contact">
+                      <Button size="sm">Request Overview</Button>
+                    </Link>
+                    <Link to="/publishers" className="ml-auto">
+                      <Button size="sm" variant="ghost">
+                        Publisher Inquiries
+                      </Button>
+                    </Link>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* Process Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-hero">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Our Advisory Process
-            </h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Our Engagement Process</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Our advisory process is iterative, AI-driven, and outcome-focused — ensuring every engagement creates measurable impact.
+              A pragmatic, evidence-led approach to platform modernization — focused on risk reduction, compliance, and measurable business outcomes.
             </p>
           </div>
 
@@ -149,22 +169,22 @@ const Services = () => {
               {
                 step: "01",
                 title: "Discover",
-                desc: "Assess current state and opportunities for AI infusion",
+                desc: "Assess current systems, security posture, and publisher requirements.",
               },
               {
                 step: "02",
                 title: "Design",
-                desc: "Craft AI-first roadmaps aligned with vision & outcomes",
+                desc: "Architect secure, scalable solutions tailored to content & commerce needs.",
               },
               {
                 step: "03",
-                title: "Deploy",
-                desc: "Execute with hands-on AI, data, and digital expertise",
+                title: "Build",
+                desc: "Deliver production-ready platforms, integrations, and onboarding pipelines.",
               },
               {
                 step: "04",
-                title: "Evolve",
-                desc: "Continuously optimize with learning systems and feedback loops",
+                title: "Operate",
+                desc: "Run, monitor, and evolve platforms with SRE, compliance, and reporting.",
               },
             ].map((phase, index) => (
               <div key={index} className="text-center">
@@ -182,17 +202,19 @@ const Services = () => {
       {/* CTA Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Ready to Lead with AI?
-          </h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to modernize your content infrastructure?</h2>
           <p className="text-xl text-muted-foreground mb-8">
-            From strategy to execution, we co-create AI-first solutions that future-proof your business and accelerate growth.
+            Let's discuss how we can secure, scale, and simplify your platform operations — with DRM, compliance, and publisher-grade reliability built in.
           </p>
-          <Link to="/contact">
-            <Button size="lg" className="shadow-glow">
-              Start Your AI Journey
-            </Button>
-          </Link>
+
+          <div className="flex flex-wrap justify-center gap-4">
+            <Link to="/contact">
+              <Button size="lg" className="shadow-md">Partner With Us</Button>
+            </Link>
+            <Link to="/publishers">
+              <Button size="lg" variant="outline">Request Publisher Due Diligence Pack</Button>
+            </Link>
+          </div>
         </div>
       </section>
     </div>
@@ -200,3 +222,4 @@ const Services = () => {
 };
 
 export default Services;
+

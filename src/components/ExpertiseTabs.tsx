@@ -56,7 +56,7 @@ const ExpertiseTabs = () => {
 
   return (
     // sticky under navbar: top-28 matches your nav height (h-28)
-    <div className="sticky top-28 z-40 border-b border-border bg-background/60 backdrop-blur-md">
+    <div className="sticky top-28 z-40 border-b border-gray-200 bg-white/80 backdrop-blur-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <nav
           aria-label="Expertise tabs"
@@ -71,7 +71,7 @@ const ExpertiseTabs = () => {
                     href={`#${tab.id}`}
                     onClick={(e) => handleClick(e, tab.id)}
                     className={`inline-flex items-center px-4 py-2 rounded-full text-sm font-medium transition-all
-                      ${isActive ? "bg-primary/10 text-primary shadow-sm" : "text-muted-foreground hover:text-primary"}
+                      ${isActive ? "bg-blue-50 text-blue-600 shadow-sm" : "text-gray-600 hover:text-blue-600"}
                       `}
                     aria-current={isActive ? "true" : undefined}
                   >
