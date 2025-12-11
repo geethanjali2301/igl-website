@@ -2,15 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/logo.png"; // ensure this exists at src/assets/logo.png
-
-/**
- * Navigation.tsx
- * - Desktop dropdown for Library Solutions
- * - Mobile expandable section
- * - Closes dropdown on outside click / Escape
- * - Closes dropdown when navigating
- */
+import logo from "@/assets/logo.png";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false); // mobile menu
@@ -20,7 +12,6 @@ const Navigation = () => {
 
   const isActive = (path: string) => location.pathname === path;
 
-  // keep nav items **without** Library Solutions (we add dropdown separately)
   const navItems = [
     { path: "/", label: "Home" },
     { path: "/products", label: "AI Solutions" },
@@ -29,7 +20,7 @@ const Navigation = () => {
     { path: "/aboutus", label: "Company" },
   ];
 
-  // Close dropdown on outside click / escape
+  // outside click + escape close
   useEffect(() => {
     function handleDocClick(e: MouseEvent) {
       if (!dropdownRef.current) return;
@@ -51,7 +42,7 @@ const Navigation = () => {
     };
   }, []);
 
-  // Close dropdown when route changes (keeps state in sync)
+  // close when route changes
   useEffect(() => {
     setDropdownOpen(false);
     setIsOpen(false);
@@ -76,31 +67,30 @@ const Navigation = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`text-base md:text-md font-medium transition-colors hover:text-primary ${
-                  isActive(item.path) ? "text-blue-600" : "text-gray-700"
+                className={`nav-underline text-base font-medium transition-colors ${
+                  isActive(item.path) ? "active text-blue-600" : "text-gray-700 hover:text-primary"
                 }`}
               >
                 {item.label}
               </Link>
             ))}
 
-            {/* ---------- Library Solutions Dropdown (desktop) ---------- */}
+            {/* Desktop Dropdown */}
             <div className="relative" ref={dropdownRef}>
               <button
                 type="button"
                 onClick={() => setDropdownOpen((s) => !s)}
-                className={`text-base md:text-md font-medium px-3 py-2 rounded-md flex items-center gap-2 transition-colors ${
-                  dropdownOpen ? "text-blue-600" : "text-gray-700 hover:text-primary"
+                className={`nav-underline text-base font-medium px-3 py-2 rounded-md flex items-center gap-2 transition-colors ${
+                  dropdownOpen ? "active text-blue-600" : "text-gray-700 hover:text-primary"
                 }`}
-                aria-haspopup="true"
-                aria-expanded={dropdownOpen}
               >
-                <span>Library Solutions</span>
+                Library Solutions
                 <svg
-                  className={`w-4 h-4 transition-transform ${dropdownOpen ? "transform rotate-180" : ""}`}
+                  className={`w-4 h-4 transition-transform ${
+                    dropdownOpen ? "rotate-180" : ""
+                  }`}
                   viewBox="0 0 20 20"
                   fill="currentColor"
-                  aria-hidden="true"
                 >
                   <path
                     fillRule="evenodd"
@@ -110,11 +100,12 @@ const Navigation = () => {
                 </svg>
               </button>
 
+              {/* Dropdown Menu */}
               <div
-                role="menu"
-                aria-hidden={!dropdownOpen}
                 className={`absolute left-0 mt-2 w-56 bg-white border rounded-md shadow-lg transform transition-all duration-150 ${
-                  dropdownOpen ? "opacity-100 translate-y-0 pointer-events-auto z-50" : "opacity-0 -translate-y-1 pointer-events-none"
+                  dropdownOpen
+                    ? "opacity-100 translate-y-0 pointer-events-auto z-50"
+                    : "opacity-0 -translate-y-1 pointer-events-none"
                 }`}
               >
                 <div className="py-1">
@@ -125,7 +116,6 @@ const Navigation = () => {
                   >
                     Boundless
                   </Link>
-
                   <Link
                     to="/library-solutions/epopup"
                     onClick={() => setDropdownOpen(false)}
@@ -133,7 +123,6 @@ const Navigation = () => {
                   >
                     Epopup
                   </Link>
-
                   <Link
                     to="/library-solutions/content-services"
                     onClick={() => setDropdownOpen(false)}
@@ -144,11 +133,10 @@ const Navigation = () => {
                 </div>
               </div>
             </div>
-            {/* ---------- end dropdown ---------- */}
 
-            {/* Right-side CTA (desktop) - For Publishers + Partner with Us */}
+            {/* Right-side links */}
             <div className="hidden md:flex items-center gap-4">
-              <Link to="/publishers" className="text-sm font-medium text-gray-700 hover:text-primary">
+              <Link to="/publishers" className="nav-underline text-sm font-medium text-gray-700 hover:text-primary">
                 For Publishers
               </Link>
               <Link to="/login">
@@ -169,13 +157,12 @@ const Navigation = () => {
         {isOpen && (
           <div className="md:hidden py-4 border-t border-border">
             <div className="flex flex-col space-y-3">
-              {/* top-level items */}
               {navItems.map((item) => (
                 <Link
                   key={item.path}
                   to={item.path}
-                  className={`text-base font-medium transition-colors hover:text-primary ${
-                    isActive(item.path) ? "text-blue-600" : "text-gray-700"
+                  className={`text-base font-medium transition-colors ${
+                    isActive(item.path) ? "text-blue-600" : "text-gray-700 hover:text-primary"
                   }`}
                   onClick={() => setIsOpen(false)}
                 >
@@ -183,16 +170,17 @@ const Navigation = () => {
                 </Link>
               ))}
 
-              {/* Mobile expandable Library Solutions */}
+              {/* Mobile Expand Dropdown */}
               <div className="border rounded-md bg-white">
                 <button
                   onClick={() => setDropdownOpen((s) => !s)}
                   className="w-full text-left px-3 py-2 flex items-center justify-between"
-                  type="button"
                 >
                   <span className="text-base font-medium">Library Solutions</span>
                   <svg
-                    className={`w-4 h-4 transition-transform ${dropdownOpen ? "transform rotate-180" : ""}`}
+                    className={`w-4 h-4 transition-transform ${
+                      dropdownOpen ? "rotate-180" : ""
+                    }`}
                     viewBox="0 0 20 20"
                     fill="currentColor"
                   >
@@ -236,7 +224,7 @@ const Navigation = () => {
                 )}
               </div>
 
-              {/* Mobile CTA / Login */}
+              {/* Mobile CTA */}
               <div className="pt-2">
                 <Link to="/publishers" onClick={() => setIsOpen(false)} className="block text-base font-medium text-gray-700 mb-2">
                   For Publishers
@@ -256,4 +244,5 @@ const Navigation = () => {
 };
 
 export default Navigation;
+
 
